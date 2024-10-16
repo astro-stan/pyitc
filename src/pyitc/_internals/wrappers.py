@@ -398,6 +398,22 @@ def clone_event(pp_handle: CTypesData) -> CTypesData:
     return pp_cloned_handle
 
 
+def join_event(pp_handle: CTypesData, pp_other_handle: CTypesData) -> None:
+    """Join two ITC Event, merging their causal history.
+
+    The joined Event must be deallocated with :meth:`free_event` when no longer needed.
+
+    :param pp_handle: The handle of the first source Event
+        This handle will be modified in place and become the joined Event
+    :type pp_handle: CTypesData
+    :param pp_other_handle: The handle of the second source Event.
+        This handle will be deallocated
+    :type pp_other_handle: CTypesData
+    :raises ItcCApiError: If something goes wrong while inside the C API
+    """
+    _handle_c_return_status(_lib.ITC_Event_join(pp_handle, pp_other_handle))
+
+
 def serialise_event(pp_handle: CTypesData) -> bytes:
     """Serialise the given ITC Event.
 
