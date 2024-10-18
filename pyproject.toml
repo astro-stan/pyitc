@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Python bindings for the libitc library"
 readme = 'README.md'
 license = {file = 'LICENSE'}
-urls.repository = "https://github.com/sdimovv/pyitc"
-urls.homepage = "https://github.com/sdimovv/pyitc"
-urls.issues = "https://github.com/sdimovv/pyitc/issues"
-urls.changelog = "https://github.com/sdimovv/pyitc/releases"
+urls.repository = "https://github.com/astro-stan/pyitc"
+urls.homepage = "https://github.com/astro-stan/pyitc"
+urls.issues = "https://github.com/astro-stan/pyitc/issues"
+urls.changelog = "https://github.com/astro-stan/pyitc/releases"
 keywords = ["interval", "tree", "clocks", "logical", "vector", "causal", "sync"]
 classifiers = [
   "Development Status :: 4 - Beta",
