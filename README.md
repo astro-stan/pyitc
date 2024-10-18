@@ -1,10 +1,10 @@
 # pyitc
 
-<img src="https://img.shields.io/github/actions/workflow/status/sdimovv/pyitc/.github%2Fworkflows%2Fbuild-and-run-tests.yml?branch=main&logo=github" alt="Build Status"> <a href="https://codecov.io/gh/sdimovv/pyitc" >
- <img src="https://codecov.io/gh/sdimovv/pyitc/graph/badge.svg"/>
- </a> <a href="https://github.com/sdimovv/pyitc/releases/latest"><img src="https://img.shields.io/github/v/release/sdimovv/pyitc" alt="Latest GitHub Release"></a> <a href="./LICENSE"><img src="https://img.shields.io/github/license/sdimovv/pyitc" alt="License AGPL-3.0"></a>
+<img src="https://img.shields.io/github/actions/workflow/status/astro-stan/pyitc/.github%2Fworkflows%2Fbuild-and-run-tests.yml?branch=main&logo=github" alt="Build Status"> <a href="https://codecov.io/gh/astro-stan/pyitc" >
+ <img src="https://codecov.io/gh/astro-stan/pyitc/graph/badge.svg"/>
+ </a> <a href="https://github.com/astro-stan/pyitc/releases/latest"><img src="https://img.shields.io/github/v/release/astro-stan/pyitc" alt="Latest GitHub Release"></a> <a href="./LICENSE"><img src="https://img.shields.io/github/license/astro-stan/pyitc" alt="License AGPL-3.0"></a>
 
-Python bindings for the [libitc library](https://github.com/sdimovv/libitc).
+Python bindings for the [libitc library](https://github.com/astro-stan/libitc).
 
 ## What Are Interval Tree Clocks?
 
@@ -16,7 +16,7 @@ highly dynamic number of replicas/processes in a distributed system.
 
 * Provides easy-to-use, Pythonesque bindings for the underlying C library
 * Provides `__str__` methods for easy visualisation of the ITC trees
-* Provides bindings for the C lib's ["extended API"](https://github.com/sdimovv/libitc?tab=readme-ov-file#features:~:text=%22extended%22%20API%20interface)
+* Provides bindings for the C lib's ["extended API"](https://github.com/astro-stan/libitc?tab=readme-ov-file#features:~:text=%22extended%22%20API%20interface)
 * Uses 64-bit event counters
 
 ## Usage examples
