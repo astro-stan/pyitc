@@ -20,7 +20,7 @@ Python bindings for the [libitc library](https://github.com/astro-stan/libitc).
 Interval Tree Clocks (ITC) are a generalisation of the [Vector Clock](https://en.wikipedia.org/wiki/Vector_clock) and [Version Vector](https://en.wikipedia.org/wiki/Version_vector) mechanisms, allowing for scalable and efficient management of a
 highly dynamic number of replicas/processes in a distributed system.
 
-Based on the [ITC research paper](http://hydra.azilian.net/Papers/Interval%20Tree%20Clocks.pdf) from Paulo Sérgio Almeida, Carlos Baquero and Victor Fonte.
+See the [ITC research paper](http://hydra.azilian.net/Papers/Interval%20Tree%20Clocks.pdf) from Paulo Sérgio Almeida, Carlos Baquero and Victor Fonte for more information.
 
 ## Features
 
