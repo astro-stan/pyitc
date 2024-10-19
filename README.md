@@ -11,7 +11,7 @@ Python bindings for the [libitc library](https://github.com/astro-stan/libitc).
 * [Getting Started](#getting-started)
     + [Prerequisites](#prerequisites)
     + [Usage Examples](#usage-examples)
-* [How To Contribute?](#how-to-contribute)
+* [Contributing](#contributing)
 * [Reporting Vulnerabilities](#reporting-vulnerabilities)
 
 
