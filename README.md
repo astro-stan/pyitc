@@ -60,6 +60,18 @@ else:
 if stamp.compare_to(stamp2) == StampComparisonResult.EQUAL: # equivalent to stamp == stamp2
     print("yay again!")
 
+stamp2.event() # Make stamp2 concurrent with stamp
+
+if stamp.compare_to(stamp2) == StampComparisonResult.CONCURRENT:
+    print("Oh no! What should we do now?")
+
+stamp3 = stamp2.fork()
+
+stamp2.join(stamp3)
+
+if not stamp3.is_valid():
+    print("stamp3 was joined with stamp2 and is no longer valid!")
+
 print(stamp.id_component) # (0, 1)
 print(stamp.event_component) # 1
 
