@@ -1,6 +1,6 @@
 [project]
 name = "pyitc"
-version = "0.1.0"
+version = "0.1.0" # Keep in sync with the Meson project version in meson.build
 description = "Python bindings for the libitc library"
 readme = 'README.md'
 license = {file = 'LICENSE'}
@@ -10,13 +10,18 @@ urls.issues = "https://github.com/astro-stan/pyitc/issues"
 urls.changelog = "https://github.com/astro-stan/pyitc/releases"
 keywords = ["interval", "tree", "clocks", "logical", "vector", "causal", "sync"]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
   "Intended Audience :: Education",
   "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
 ]
-requires-python = '>=3.8'
+requires-python = '>=3.8' # Keep in sync with the classifiers above
 dependencies = [
   "cffi>=1.16",
   "typing-extensions; python_version<'3.11'",
