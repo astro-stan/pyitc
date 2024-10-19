@@ -175,5 +175,3 @@ jobs:
           prerelease: ${{needs.check-conditions.outputs.is-pre-release == 'true' }}
       - name: PyPI Release
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          repository-url: https://test.pypi.org/legacy/
