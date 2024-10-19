@@ -1,8 +1,6 @@
 # pyitc
 
-<img src="https://img.shields.io/github/actions/workflow/status/astro-stan/pyitc/.github%2Fworkflows%2Fbuild-and-run-tests.yml?branch=main&logo=github" alt="Build Status"> <a href="https://codecov.io/gh/astro-stan/pyitc" >
- <img src="https://codecov.io/gh/astro-stan/pyitc/graph/badge.svg"/>
- </a> <a href="https://github.com/astro-stan/pyitc/releases/latest"><img src="https://img.shields.io/github/v/release/astro-stan/pyitc" alt="Latest GitHub Release"></a> <a href="./LICENSE"><img src="https://img.shields.io/github/license/astro-stan/pyitc" alt="License AGPL-3.0"></a>
+<img src="https://img.shields.io/github/actions/workflow/status/astro-stan/pyitc/.github%2Fworkflows%2Fbuild-and-run-tests.yml?branch=main&logo=github" alt="Build Status"> <a href="https://codecov.io/gh/astro-stan/pyitc" ><img src="https://codecov.io/gh/astro-stan/pyitc/graph/badge.svg"/></a> <a href="https://github.com/astro-stan/pyitc/releases/latest"><img src="https://img.shields.io/github/v/release/astro-stan/pyitc" alt="Latest GitHub Release"></a> <a href="./LICENSE"><img src="https://img.shields.io/github/license/astro-stan/pyitc" alt="License AGPL-3.0"></a>
 
 Python bindings for the [libitc library](https://github.com/astro-stan/libitc).
 
