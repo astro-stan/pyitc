@@ -6,11 +6,23 @@
 
 Python bindings for the [libitc library](https://github.com/astro-stan/libitc).
 
+## Table Of Contents
+
+* [What Are Interval Tree Clocks?](#what-are-interval-tree-clocks)
+* [Features](#features)
+* [Getting Started](#getting-started)
+    + [Prerequisites](#prerequisites)
+    + [Usage Examples](#usage-examples)
+* [How To Contribute?](#how-to-contribute)
+* [Reporting Vulnerabilities](#reporting-vulnerabilities)
+
+
 ## What Are Interval Tree Clocks?
 
 Interval Tree Clocks (ITC) are a generalisation of the [Vector Clock](https://en.wikipedia.org/wiki/Vector_clock) and [Version Vector](https://en.wikipedia.org/wiki/Version_vector) mechanisms, allowing for scalable and efficient management of a
 highly dynamic number of replicas/processes in a distributed system.
 
+Based on the [ITC research paper](http://hydra.azilian.net/Papers/Interval%20Tree%20Clocks.pdf) from Paulo Sérgio Almeida, Carlos Baquero and Victor Fonte.
 
 ## Features
 
@@ -19,7 +31,13 @@ highly dynamic number of replicas/processes in a distributed system.
 * Provides bindings for the C lib's ["extended API"](https://github.com/astro-stan/libitc?tab=readme-ov-file#features:~:text=%22extended%22%20API%20interface)
 * Uses 64-bit event counters
 
-## Usage examples
+## Getting Started
+
+### Prerequisites
+
+Download and install the wheels or sdist from [PyPI](https://pypi.org/project/pyitc/).
+
+### Usage Examples
 
 Here are some usage examples:
 
@@ -59,6 +77,12 @@ remote_event = Event.deserialise(b'...')
 remote_id = Id.deserialise(b'...')
 ```
 
-## License
+## How To Contribute?
 
-Released under AGPL-3.0 license, see [LICENSE](./LICENSE) for details.
+See [CONTRIBUTING.md](https://github.com/astro-stan/pyitc/blob/main/CONTRIBUTING.md).
+
+## Reporting Vulnerabilities
+
+> :warning: **NEVER** open public issues or pull requests to report or fix security vulnerabilities.
+
+See the [Security Policy](https://github.com/astro-stan/pyitc/tree/main?tab=security-ov-file).
