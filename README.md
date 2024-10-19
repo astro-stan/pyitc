@@ -87,7 +87,7 @@ remote_event = Event.deserialise(b'...')
 remote_id = Id.deserialise(b'...')
 ```
 
-## How To Contribute?
+## Contributing
 
 See [CONTRIBUTING.md](https://github.com/astro-stan/pyitc/blob/main/CONTRIBUTING.md).
 
