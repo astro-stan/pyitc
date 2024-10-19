@@ -33,7 +33,7 @@ Based on the [ITC research paper](http://hydra.azilian.net/Papers/Interval%20Tre
 
 ### Prerequisites
 
-Download and install the wheels or sdist from [PyPI](https://pypi.org/project/pyitc/).
+Download and install the wheels or sdist from [PyPI](https://pypi.org/project/pyitc/) or [GitHub](https://github.com/astro-stan/pyitc/releases).
 
 ### Usage Examples
 
