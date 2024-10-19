@@ -95,4 +95,4 @@ See [CONTRIBUTING.md](https://github.com/astro-stan/pyitc/blob/main/CONTRIBUTING
 
 > :warning: **NEVER** open public issues or pull requests to report or fix security vulnerabilities.
 
-See the [Security Policy](https://github.com/astro-stan/pyitc/tree/main?tab=security-ov-file).
+See the [Security Policy](https://github.com/astro-stan/pyitc/blob/main/SECURITY.md).
