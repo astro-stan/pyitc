@@ -5,7 +5,12 @@
 
 import pytest
 
-from pyitc.exceptions import InactiveIdError, ItcStatus, OverlappingIdIntervalError
+from pyitc.exceptions import (
+    InactiveEventError,
+    InactiveIdError,
+    ItcStatus,
+    OverlappingIdIntervalError,
+)
 from pyitc.extended_api import Event, Id
 
 
@@ -90,3 +95,24 @@ def test_sum_id() -> None:
 def test_create_event() -> None:
     """Test creating a new Event."""
     assert str(Event()) == "0"
+
+
+def test_join_event() -> None:
+    """Test joining an Event."""
+    obj: Event = Event()
+    obj2: Event = Event()
+    obj.join(obj2)
+
+    assert obj.is_valid()
+    assert not obj2.is_valid()
+    with pytest.raises(InactiveEventError):
+        obj2._c_type  # noqa: B018, SLF001
+    assert str(obj) == "0"
+
+    with pytest.raises(
+        TypeError, match=r"Expected instance of Event, got event=<class '.*\.Id'>"
+    ):
+        obj.join(Id())  # type: ignore[arg-type]
+
+    with pytest.raises(ValueError, match=r"An Event cannot be joined with itself"):
+        obj.join(obj)

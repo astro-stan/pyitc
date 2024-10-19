@@ -187,6 +187,34 @@ class Event(_wrappers.ItcWrapper):
 
         return Event(_c_type=_wrappers.deserialise_event(bytes(buffer)))
 
+    def join(self: Self, *other_event: Event) -> Self:
+        """Join Event interval(s).
+
+        After the join, the causal history of the other event(s) will be added
+        to the current event, while the other event(s) become invalid and
+        cannot be used anymore.
+
+        :param other_event: The Event to be joined with
+        :type other_event: Event
+        :returns: self
+        :rtype: Event
+        :raises TypeError: If :param:`other_event` is not of type :class:`Event`
+        :raises ValueError: If both Events are of the same instance
+        :raises ItcError: If something goes wrong during the joining
+        """
+        for event in other_event:
+            if not isinstance(event, Event):
+                msg = f"Expected instance of Event, got event={type(event)}"
+                raise TypeError(msg)
+            if self._c_type == event._c_type:  # noqa: SLF001
+                msg = "An Event cannot be joined with itself"
+                raise ValueError(msg)
+
+        for event in other_event:
+            _wrappers.join_event(self._c_type, event._c_type)  # noqa: SLF001
+
+        return self
+
     def __str__(self: Self) -> str:
         """Serialise an Event to string."""
         try:

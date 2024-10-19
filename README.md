@@ -50,9 +50,9 @@ print(stamp.event_component) # 1
 stamp.event_component = Event()
 stamp.id_component = Id(seed=True)
 
-print(stamp.serialise()) # b'\x00\t\x01\x02\x01\x00'
-print(stamp.id_component.serialise()) # b'\x00\x02'
-print(stamp.event_component.serialise()) # b'\x00\x00'
+print(stamp.serialise()) # b'\x01\t\x01\x02\x01\x00'
+print(stamp.id_component.serialise()) # b'\x01\x02'
+print(stamp.event_component.serialise()) # b'\x01\x00'
 
 remote_stamp = Stamp.deserialise(b'...')
 remote_event = Event.deserialise(b'...')

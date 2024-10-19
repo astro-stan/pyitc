@@ -18,6 +18,7 @@ libitc_c_args = [
     '-DITC_CONFIG_ENABLE_EXTENDED_API=1',
     '-DITC_CONFIG_USE_64BIT_EVENT_COUNTERS=1',
     '-DITC_CONFIG_ENABLE_SERIALISE_TO_STRING_API=1',
+    '-DITC_CONFIG_MEMORY_ALLOCATION_TYPE=0', # Standard malloc/free allocation
 ]
 
 # A set of defines to pass to the preprocessor when generating the pyitc C ext
