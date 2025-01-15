@@ -1,4 +1,4 @@
-# Copyright (c) 2024 pyitc project. Released under AGPL-3.0
+# Copyright (c) 2024-2025 pyitc project. Released under AGPL-3.0
 # license. Refer to the LICENSE file for details or visit:
 # https://www.gnu.org/licenses/agpl-3.0.en.html
 
@@ -205,7 +205,7 @@ def is_handle_valid(pp_handle: CTypesData) -> bool:
     :param pp_handle: The handle to validate
     :type pp_handle: CTypesData
     :returns: True if valid, otherwise False
-    :rtype: CTypesData
+    :rtype: bool
     """
     return pp_handle and pp_handle != _ffi.NULL and pp_handle[0] != _ffi.NULL
 
