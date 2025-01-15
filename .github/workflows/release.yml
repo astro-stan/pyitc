@@ -86,6 +86,7 @@ jobs:
             *cp310*
             *cp311*
             *cp312*
+            *cp313*
           CIBW_BUILD_FRONTEND: build
           # Build ABI3 (limited API) wheels
           CIBW_CONFIG_SETTINGS: setup-args="-Dpython.allow_limited_api=true"
