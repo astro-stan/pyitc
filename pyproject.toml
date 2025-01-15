@@ -1,6 +1,6 @@
 [project]
 name = "pyitc"
-version = "1.0.0" # Keep in sync with the Meson project version in meson.build
+version = "1.1.0" # Keep in sync with the Meson project version in meson.build
 description = "Python bindings for the libitc library"
 readme = 'README.md'
 license = {file = 'LICENSE'}
