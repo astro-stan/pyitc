@@ -205,7 +205,7 @@ def is_handle_valid(pp_handle: CTypesData) -> bool:
     :param pp_handle: The handle to validate
     :type pp_handle: CTypesData
     :returns: True if valid, otherwise False
-    :rtype: CTypesData
+    :rtype: bool
     """
     return pp_handle and pp_handle != _ffi.NULL and pp_handle[0] != _ffi.NULL
 
