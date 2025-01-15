@@ -128,7 +128,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build CPython wheels
-        uses: pypa/cibuildwheel@v2.19.1
+        uses: pypa/cibuildwheel@v2.22.0
         env:
           # Build for all supported python versions
           CIBW_BUILD: |
@@ -161,7 +161,7 @@ jobs:
         with:
           output-dir: dist
       - name: Build PyPy wheels
-        uses: pypa/cibuildwheel@v2.19.1
+        uses: pypa/cibuildwheel@v2.22.0
         env:
           # Build for all supported python versions
           CIBW_BUILD: |
